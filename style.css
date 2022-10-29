@@ -1,0 +1,169 @@
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%) ; 
+--Transparent-white : hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--Very-light-gray) ;
+    max-width: 1440px;
+    max-height: 100vh;   
+}
+
+.grid{
+    display: grid; 
+    place-content: center;
+    grid-template-columns: 290px 290px 290px;
+    padding-top: 110px; 
+}
+article{
+    
+    padding: 46px 46px;
+   
+    
+}
+article.left{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0px 0px 10px;
+}
+
+article.middle{
+    background-color: var(--Dark-cyan);
+}
+
+article.rigth{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+article img{
+    padding-bottom: 26px;
+}
+
+article h1,h2,h3{
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    font-family: ' Big Shoulders Display',cursive ;
+    font-size: ;
+    padding-bottom: 28px;
+}
+
+article p{
+    font-size: 15px;
+    font-family:'Lexend Deca', sans-serif ;
+    color: var(--Transparent-white);
+    line-height: 25px;
+    padding-bottom: 36px;
+}
+
+button{
+    font-family:'Lexend Deca', sans-serif ;
+    background-color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
+    border-radius: 30px;
+    padding: 14px 30px;
+    margin-top: 46px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    /* make text look transparent so container background shows through*/
+    mix-blend-mode: screen;
+ 
+  }
+
+button:hover {
+   background-color: transparent;  
+   
+  }
+
+button a{
+    text-decoration: none;
+     
+}
+
+button a:hover{
+color: var(--Very-light-gray);
+} 
+  
+
+
+.attribution {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif ;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width:40em){
+    .grid{
+        display: block;
+        padding-top: 90px; 
+        
+       
+    }
+    article{
+    
+        padding: 46px 46px;
+        max-width: 330px;
+        margin: auto;
+    }
+    article.left{
+
+        border-radius: 10px 10px 0px 0px;
+    }
+    article.rigth{
+
+        border-radius: 0px 0px 10px 10px;
+    }
+    button{
+        font-family:'Lexend Deca', sans-serif ;
+        background-color: var(--Very-light-gray);
+        border: 2px solid var(--Very-light-gray);
+        border-radius: 30px;
+        padding: 14px 30px;
+        margin-top: 0px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        /* make text look transparent so container background shows through*/
+        mix-blend-mode: screen;
+     
+      }
+    
+    button:hover {
+       background-color: transparent;  
+       
+      }
+    
+    button a{
+        text-decoration: none;
+         
+    }
+    
+    button a:hover{
+    color: var(--Very-light-gray);
+    }
+    .attribution {
+        margin-top: 10px;
+        font-size: 12px;
+ 
+        
+    } 
+}
