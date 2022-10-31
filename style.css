@@ -15,7 +15,8 @@
 body{
     background-color:var(--Very-light-gray) ;
     max-width: 1440px;
-    max-height: 100vh;   
+    max-height: 100vh;
+    font-family:'Lexend Deca', sans-serif ;
 }
 
 .grid{
@@ -58,48 +59,34 @@ article h1,h2,h3{
 
 article p{
     font-size: 15px;
-    font-family:'Lexend Deca', sans-serif ;
     color: var(--Transparent-white);
     line-height: 25px;
-    padding-bottom: 36px;
+    padding-bottom: 77px;
 }
 
-button{
-    font-family:'Lexend Deca', sans-serif ;
+.learn-more-button{
     background-color: var(--Very-light-gray);
     border: 2px solid var(--Very-light-gray);
-    border-radius: 30px;
-    padding: 14px 30px;
-    margin-top: 46px;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
+    border-radius: 25px;
     /* make text look transparent so container background shows through*/
     mix-blend-mode: screen;
- 
-  }
-
-button:hover {
-   background-color: transparent;  
-   
-  }
-
-button a{
     text-decoration: none;
-     
+    padding: 10px 26px;
+    cursor: pointer;
+}
+.learn-more-button:hover{
+    background-color: transparent;
+    color: var(--Very-light-gray);
 }
 
-button a:hover{
-color: var(--Very-light-gray);
-} 
-  
-
+footer{
+   margin-top: 20px;
+   font-family: 'Lexend Deca', sans-serif ;
+}
 
 .attribution {
-    margin-top: 20px;
     font-size: 14px;
     text-align: center;
-    font-family: 'Lexend Deca', sans-serif ;
-
 }
 
 .attribution a {
@@ -113,6 +100,7 @@ color: var(--Very-light-gray);
 }
 
 @media (max-width:40em){
+
     .grid{
         display: block;
         padding-top: 90px; 
@@ -133,37 +121,15 @@ color: var(--Very-light-gray);
 
         border-radius: 0px 0px 10px 10px;
     }
-    button{
-        font-family:'Lexend Deca', sans-serif ;
-        background-color: var(--Very-light-gray);
-        border: 2px solid var(--Very-light-gray);
-        border-radius: 30px;
-        padding: 14px 30px;
-        margin-top: 0px;
-        cursor: pointer;
-        transition: all 0.4s ease-in-out;
-        /* make text look transparent so container background shows through*/
-        mix-blend-mode: screen;
-     
-      }
-    
-    button:hover {
-       background-color: transparent;  
-       
-      }
-    
-    button a{
-        text-decoration: none;
-         
+   
+    article p{
+        padding-bottom: 36px;
     }
-    
-    button a:hover{
-    color: var(--Very-light-gray);
-    }
+
     .attribution {
         margin-top: 10px;
         font-size: 12px;
- 
+       
         
     } 
 }
